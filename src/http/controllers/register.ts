@@ -26,8 +26,6 @@ export async function register (req: FastifyRequest, res: FastifyReply) {
 		}
 
 		throw err;
-
-		return res.status(500).send();
 	}
 	
 
