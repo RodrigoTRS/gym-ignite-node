@@ -14,11 +14,7 @@ interface RegisterUseCaseReponse {
 }
 
 export class RegisterUseCase {
-	constructor(
-		private usersRepository: UsersRepository
-	) {
-
-	}
+	constructor(private usersRepository: UsersRepository) {}
 
 	async execute({ name, email, password }: RegisterUseCaseRequest): Promise<RegisterUseCaseReponse> {
 		const password_hash = await hash(password, 6);
