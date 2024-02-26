@@ -16,10 +16,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "tab"
-        ],
+        "indent": "off",
         "no-useless-constructor": "off",
         "quotes": [
             "error",
