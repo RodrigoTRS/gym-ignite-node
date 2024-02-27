@@ -2,7 +2,7 @@ import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-c
 import { expect, describe, it, beforeEach, afterEach, vi } from "vitest";
 import { ValidateCheckInUseCase } from "./validate-check-in";
 import { ResourceNotFoundError } from "./errors/resource-not-found-error";
-import { LateCheckInValidationError } from "./errors/late-checkin-validation-error";
+import { LateCheckInValidationError } from "./errors/late-check-in-validation-error";
 
 let checkInsRepository: InMemoryCheckInsRepository;
 let sut: ValidateCheckInUseCase;
