@@ -13,7 +13,7 @@ describe("Nerby gyms (e2e): ", () => {
   });
 
   it("should be able to fetch a nerby a gym", async () => {
-    const { token } = await createAndAuthenticateUser();
+    const { token } = await createAndAuthenticateUser(app, true);
 
     await request(app.server)
       .post("/gyms")
