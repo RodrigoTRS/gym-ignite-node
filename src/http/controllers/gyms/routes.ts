@@ -1,6 +1,6 @@
 import { verifyJWT } from "@/http/middlewares/verify-jwt";
 import { FastifyInstance } from "fastify";
-import { search } from "./search-gyms";
+import { search } from "./search";
 import { nearby } from "./nearby";
 import { create } from "./create";
 
